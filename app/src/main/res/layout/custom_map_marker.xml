@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:layout_margin="16dp"
+                                             android:paddingEnd="16dp"
+                                             android:paddingLeft="16dp"
+                                             android:paddingRight="16dp"
+                                             android:paddingStart="16dp"
+                                             app:layout_constraintEnd_toEndOf="parent"
+                                             app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+            android:id="@+id/checkpoint_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/txtLocMarkerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/checkpoint_color"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+            android:id="@+id/txtLocMarkerAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/checkpoint_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLocMarkerName" />
+
+    <ImageView
+            android:id="@+id/imgLocMarkerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLocMarkerAddress" />
+
+    <TextView
+            android:id="@+id/txtLocMarkerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imgLocMarkerEmail"
+            app:layout_constraintTop_toBottomOf="@id/txtLocMarkerAddress"/>
+
+    <ImageView
+            android:id="@+id/imgLocMarkerPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLocMarkerEmail" />
+
+    <TextView
+            android:id="@+id/txtLocMarkerPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/imgLocMarkerPhone"
+            app:layout_constraintTop_toBottomOf="@+id/txtLocMarkerEmail"/>
+
+    <TextView
+            android:id="@+id/txtOpenningHoursValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtLocMarkerPhone" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".CreateNewCheckpointFragment" android:id="@+id/frameLayout"
+             android:windowSoftInputMode="adjustPan">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/createFragment">
+
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:id="@+id/checkpoint_label"
+                android:hint="@string/enter_label"
+                android:textColorHint="@color/accent_hint"
+                android:fontFamily="@font/josefinsans_regular" android:textColor="@color/accent_two"
+                android:gravity="center" android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:text="@string/default_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/latitude"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView5" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" android:textColor="@color/accent_two"
+                android:fontFamily="@font/josefinsans_regular"/>
+        <TextView
+                android:text="@string/default_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/longitude"
+                app:layout_constraintTop_toTopOf="@+id/latitude"
+                app:layout_constraintBottom_toBottomOf="@+id/latitude" app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintEnd_toEndOf="@+id/textView6" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView6" android:textColor="@color/accent_two"
+                android:fontFamily="@font/josefinsans_regular"/>
+        <TextView
+                android:text="@string/default_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/speed"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/textView9"
+                app:layout_constraintTop_toTopOf="@+id/altitude"
+                app:layout_constraintBottom_toBottomOf="@+id/altitude" android:textColor="@color/accent_two"
+                android:fontFamily="@font/josefinsans_regular"/>
+        <TextView
+                android:text="@string/default_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/altitude"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView7"
+                app:layout_constraintStart_toStartOf="@+id/textView7"
+                android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/textView7"
+                android:textColor="@color/accent_two" android:fontFamily="@font/josefinsans_regular"/>
+        <TextView
+                android:text="@string/latitude"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:textSize="14sp"
+                android:textColor="@color/accent_two"
+                android:fontFamily="@font/josefinsans_regular"
+                android:layout_marginTop="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/checkpoint_label"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"/>
+        <TextView
+                android:text="@string/longitude"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:textSize="14sp"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="48dp" app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintBottom_toBottomOf="@+id/textView5" android:textColor="@color/accent_two"
+                android:fontFamily="@font/josefinsans_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.444" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"/>
+        <TextView
+                android:text="@string/Altitude"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toStartOf="@+id/textView5" android:layout_marginTop="32dp"
+                app:layout_constraintTop_toBottomOf="@+id/latitude" app:layout_constraintHorizontal_bias="0.0"
+                android:textColor="@color/accent_two" android:fontFamily="@font/josefinsans_regular"/>
+        <TextView
+                android:text="@string/speed"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/textView6"
+                app:layout_constraintStart_toStartOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.525"
+                app:layout_constraintTop_toTopOf="@+id/textView7"
+                app:layout_constraintBottom_toBottomOf="@+id/textView7" app:layout_constraintVertical_bias="1.0"
+                android:textColor="@color/accent_two" android:fontFamily="@font/josefinsans_regular"/>
+        <Switch
+                android:layout_width="52dp"
+                android:layout_height="0dp"
+                android:id="@+id/units_switch" android:layout_marginTop="36dp"
+                app:layout_constraintTop_toBottomOf="@+id/altitude"
+                app:layout_constraintEnd_toEndOf="@+id/textView7" app:layout_constraintStart_toStartOf="@+id/textView7"
+                app:layout_constraintHorizontal_bias="0.388"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/units_text" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/units_switch"
+                app:layout_constraintEnd_toEndOf="@+id/units_switch"
+                app:layout_constraintStart_toStartOf="@+id/units_switch"
+                android:fontFamily="@font/josefinsans_regular" android:textSize="12sp" tools:text="@string/imperial"
+                android:text="@string/imperial" android:textColor="@color/accent_hint"/>
+        <android.support.design.button.MaterialButton
+                android:text="@string/save"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/save_checkpoint"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@+id/units_text" android:fontFamily="@font/pacifico"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="16dp"
+                android:textColor="@color/accent_two"
+                app:backgroundTint="@color/secondary"
+                app:strokeColor="@color/accent"
+                android:textAllCaps="false"
+                app:strokeWidth="2dp" android:textSize="18sp"/>
+        <android.support.design.button.MaterialButton
+                android:text="COLOR"
+                android:layout_width="104dp"
+                android:layout_height="48dp"
+                android:id="@+id/choose_color" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="@+id/units_switch" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/units_text"
+                app:layout_constraintStart_toStartOf="@+id/textView9"
+                app:layout_constraintEnd_toEndOf="@+id/textView9" android:fontFamily="@font/josefinsans_regular"
+                app:strokeColor="@color/accent_two"
+                app:backgroundTint="@color/transparent"
+                app:strokeWidth="2dp" android:textSize="10sp" android:textColor="@color/accent_two"
+                android:onClick="launchColorPicker"/>
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

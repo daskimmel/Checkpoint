@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#35477D</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="delete">#90E60505</color>
+    <color name="primary">#35477D</color>
+    <color name="secondary">#6C5B7B</color>
+    <color name="text_light">#BBB5B5</color>
+    <color name="accent">#C06C84</color>
+    <color name="accent_two">#F67280</color>
+    <color name="accent_hint">#85F67280</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00FFFF00</color>
+</resources>
